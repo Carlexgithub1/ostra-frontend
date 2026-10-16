@@ -138,8 +138,6 @@ async function loadPdf() {
   }
 </script>
 
-<input type="file" accept="application/pdf" onchange={onFile} />
-
 {#if totalPages}
   <div class="nav">
     <button onclick={() => changePage(-1)} disabled={pageNum <= 1}>←</button>

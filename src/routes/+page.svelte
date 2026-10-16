@@ -18,7 +18,7 @@
         console.log("File selection button clicked");
     }
 
-    async function onFile(event) {
+    async function handleFileChange(event) {
         const file = event.target.files[0];
         if (file) {
             console.log("Selected file:", file.name);
@@ -43,8 +43,8 @@
             <h1 class="title">Fais signer <span>facilement</span> tes documents <span>en ligne</span></h1>
 
             <form class="card file-importer">
-                <input type="file" id="fileInput" class="file-input" accept="application/pdf" on:change={onFile} />
-                <button class="btn cta" on:click={handleFileSelect}>Selectionner un fichier</button>
+                <input type="file" id="fileInput" class="file-input" accept="application/pdf" onchange={handleFileChange} />
+                <button type="button" class="btn cta" onclick={handleFileSelect}>Selectionner un fichier</button>
                 <p class="card-content">Importe le document a faire signer</p>
             </form>
 
