@@ -1,0 +1,22 @@
+*{
+    --color-btn-bg-reg: hsl(255 0% 100%);
+    --color-btn-bg-disabled: hsl(255 0% 100%);
+    --color-btn-bg-cta: rgb(64, 0, 255);
+
+    --color-btn-text-reg: hsl(252, 6%, 10%);
+    --color-btn-text-cta: hsl(255 0% 100%);
+    --color-btn-text-disabled:hsla(252, 6%, 10% .5);
+
+}
+
+button, .btn{
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    background-color: var(--color-btn-bg-reg);
+    color: var(--color-btn-text-reg);
+    font-weight: 600;
+}
+button.cta, .btn.cta{
+    background-color: var(--color-btn-bg-cta);
+    color: var(--color-btn-text-cta);
+}
