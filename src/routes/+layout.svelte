@@ -11,6 +11,7 @@
 <svelte:head>
 	<link rel="icon" type="image/svg+xml" href={lightFavicon} media="(prefers-color-scheme: light)" />
 	<link rel="icon" type="image/svg+xml" href={darkFavicon} media="(prefers-color-scheme: dark)" />
+	<title>OSTRA | Online document signer</title>
 </svelte:head>
 
 {@render children()}
